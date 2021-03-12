@@ -142,4 +142,3 @@ SELECT empno, ename, hiredate
 FROM emp
 WHERE hiredate >= TO_DATE('1981/03/01', 'YYYY/MM/DD'); --이게더 안전한방법 
 
-
