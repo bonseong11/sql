@@ -8,7 +8,7 @@ FROM emp
 WHERE ename='SMITH' OR ename='ALLEN' AND job='SALESMAN';
 
 
-직원의 이름이 allen이거나 snith이면서 
+직원의 이름이 allen이거나 smith이면서 
 job이 salesmana인 직원을 조회
 
 SELECT *
@@ -20,14 +20,12 @@ EMP테이블에서
 1.JOB이 SALESMAN이거나 
 2. 사원번호가 78로 시작하면서 입사일자가 1981년 6월 1일 이후인 
 직원의 정보를 조회하세요
-SELECT *
-FROM emp
-WHERE job='SALESMAN' OR empno LIKE '78%' AND hiredate>=TO_DATE('1981/06/01', 'YYYY/MM/DD');
-
 
 SELECT *
 FROM emp
 WHERE job ='SALESMAN' OR empno LIKE '78%' AND hiredate >= TO_DATE('19810601', 'YYYYMMDD'); --AND가 우선순위가 된다.
+
+
 --데이터정렬
 --TABLE 객체에는 데이터를 저장/조회시 순서를 보장하지 않음
 --보편적으로 데이터가 입력된 순서대로 조회됨
