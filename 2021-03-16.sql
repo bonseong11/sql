@@ -177,7 +177,7 @@ FROM
 FROM (SELECT empno, ename 
       FROM emp
       ORDER BY ename));
-WHERE ROWNUM --이렇게 하면 인라인 뷰에 들어있는 ROWNUM이아니라 바깥쪽 전체 ROWNUM이 조회됨
+WHERE ROWNUM --이렇게 하면 인라인 뷰에 들어있는 ROWNUM이아니라 바깥쪽 전체 ROWNUM이 조회됨 ***꼭 별칭이 있어야함 안하면 실행 안됨***
 
 SELECT *
 FROM
