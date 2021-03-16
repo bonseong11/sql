@@ -44,7 +44,7 @@ ORDER BY {정렬기준 컬럼 OR ALIAS OR 컬럼번호}[ASC
 2. 실생활에서 필요하니까
 ==> 게시판의 게시글은 보편적으로 가장 최신글이 처음에 나오고, 가장 오래된 글이 맨 밑에 있다.
                                             
-SQL 에서 정렬 : ORDER BY ==> SELECTE->FROM->[WHERE](있을수도 없을수도있다)->ORDER BY
+SQL 에서 정렬 : ORDER BY ==> SELECT->FROM->[WHERE](있을수도 없을수도있다)->ORDER BY
 
 SELECT *
 FROM emp
