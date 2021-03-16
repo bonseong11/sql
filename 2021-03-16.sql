@@ -8,7 +8,7 @@ FROM emp
 WHERE ename='SMITH' OR ename='ALLEN' AND job='SALESMAN';
 
 
-직원의 이름이 allen이거나 snith이면서 
+직원의 이름이 allen이거나 smith이면서 
 job이 salesmana인 직원을 조회
 
 SELECT *
