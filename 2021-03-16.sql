@@ -227,7 +227,7 @@ FROM
     FROM
     (SELECT empno, ename
         FROM emp
-        ORDER BY ename))
+        ORDER BY ename));
 WHERE rn BETWEEN 11 AND 20;
 
 SELECT ROWNUM, emp.*
@@ -245,4 +245,5 @@ FROM
         FROM emp
         ORDER BY ename)) e --인라인도 알리아스 만들수 있음
 WHERE rn BETWEEN 11 AND 20;
+
 

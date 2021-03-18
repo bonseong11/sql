@@ -231,7 +231,7 @@ FROM dual;
 
 TO_DATE(문자열, 문자열 포맷)
 
-TO_DATE(TO_CHAR(SYSDATE, 'YYYY-MM-DD'), 'YYYY-MM-DD')
+TO_DATE(TO_CHAR(SYSDATE, 'YYYY-MM-DD'), 'YYYY-MM-DD') --시간을 날려버릴때 사용
 
 SELECT TO_CHAR(SYSDATE, 'YYYY-MM-DD')
 FROM dual;
@@ -239,4 +239,4 @@ FROM dual;
 SELECT TO_CHAR(TO_DATE('2021-03-17', 'YYYY-MM-DD'), 'YYYY-MM-DD HH24:MI:SS')
 FROM dual;
 
-
+round(hiredate, 'YYYY') // 년에서에서 반올림 해줘라
